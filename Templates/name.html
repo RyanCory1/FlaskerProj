@@ -1,0 +1,6 @@
+<h1>Hello {{name|capitalize|trim}}</h1>
+<p>My Name is Ryan Cory and I love pizza. </p>
+<h3>My favorite pizza is: </h3>
+	{% for topping in pizza %}
+		<br>{{topping}}</br>
+	{% endfor %}
