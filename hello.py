@@ -17,6 +17,16 @@ def user(name):
 	pizza = ["cheese", "red suace", "sausage", "mushroom"]
 	return render_template("name.html", name=name, pizza=pizza)
 
+#website for a new customer
+@app.route('/newcustomer')
+def newCustomer():
+	return render_template("newcustomer.html")
+
+#website for a returning customer
+@app.route('/returningcustomer')
+def returningCustomer
+	return render_template("returningcustomer.html")
+	
 #Create invalid URL
 @app.errorhandler(404)
 def page_not_found(e):
